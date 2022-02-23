@@ -26,7 +26,7 @@ const deleteNote = (title) => {
 
   if (notes.length > saveNotes.length) {
     console.log(chalk.red.inverse("Note deleted"));
-    saveNotes(notesToKeep);
+    saveData(saveNotes);
   } else {
     console.log(chalk.bgRed.white("\nNote not found!!\n"));
   }
